@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg01"
+    tools:context=".LoginActivity">
+
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back_btn"
+        android:hapticFeedbackEnabled="true"
+        android:paddingBottom="10.dp"
+        android:text="@string/back_arr"
+        android:textColor="#1E6FEA"
+        android:textSize="30.dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <EditText
+        android:id="@+id/emailTextField"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_fields_ui"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/yellow01"
+        android:textColorHighlight="@color/red02"
+        android:textColorHint="#8A8989"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:textSelectHandle="@drawable/text_select_handler"
+        android:textSelectHandleLeft="@drawable/text_left_select_handler"
+        android:textSelectHandleRight="@drawable/text_right_select_handler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <EditText
+        android:id="@+id/passTextField"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_fields_ui"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/yellow01"
+        android:textColorHighlight="@color/red02"
+        android:textColorHint="#8A8989"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:textSelectHandle="@drawable/text_select_handler"
+        android:textSelectHandleLeft="@drawable/text_left_select_handler"
+        android:textSelectHandleRight="@drawable/text_right_select_handler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_btn"
+        android:backgroundTint="#314197"
+        android:hapticFeedbackEnabled="true"
+        android:letterSpacing="0.25"
+        android:paddingStart="50dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="50dp"
+        android:paddingBottom="5dp"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/yellow01"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passTextField"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_btn"
+        app:layout_constraintVertical_bias="0.879"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Don't have an account ?"
+            android:textAlignment="center"
+            android:textColor="#878484" />
+
+        <Button
+            android:id="@+id/sign_up_link"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/signup_lnk"
+            android:text="Sign Up"
+            android:textColor="@color/red01"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
